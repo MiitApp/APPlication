@@ -193,7 +193,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
                                 Image.asset(
-                                  'assets/images/AC.png',
+                                  'assets/images/andrew.png',
                                   width: 200,
                                   height: 50,
                                   fit: BoxFit.fitWidth,
