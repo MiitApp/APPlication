@@ -29,6 +29,26 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
       trigger: AnimationTrigger.onActionTrigger,
       applyInitialState: true,
       effects: [
+        FadeEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 500.ms,
+          begin: 0,
+          end: 1,
+        ),
+        MoveEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 500.ms,
+          begin: Offset(-100, 0),
+          end: Offset(0, 0),
+        ),
+      ],
+    ),
+    'containerOnActionTriggerAnimation2': AnimationInfo(
+      trigger: AnimationTrigger.onActionTrigger,
+      applyInitialState: true,
+      effects: [
         MoveEffect(
           curve: Curves.easeInOut,
           delay: 0.ms,
@@ -92,26 +112,6 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
         ),
       ],
     ),
-    'containerOnActionTriggerAnimation2': AnimationInfo(
-      trigger: AnimationTrigger.onActionTrigger,
-      applyInitialState: true,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 500.ms,
-          begin: 0,
-          end: 1,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 500.ms,
-          begin: Offset(-100, 0),
-          end: Offset(0, 0),
-        ),
-      ],
-    ),
   };
 
   @override
@@ -159,407 +159,6 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
             height: double.infinity,
             child: Stack(
               children: [
-                AnimatedContainer(
-                  duration: Duration(milliseconds: 300),
-                  curve: Curves.easeIn,
-                  width: double.infinity,
-                  height: double.infinity,
-                  decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).secondaryBackground,
-                    boxShadow: [
-                      BoxShadow(
-                        blurRadius: 50,
-                        color: Color(0xDB000000),
-                        offset: Offset(0, 0),
-                      )
-                    ],
-                    borderRadius: BorderRadius.circular(0),
-                  ),
-                  child: Container(
-                    width: double.infinity,
-                    height: double.infinity,
-                    child: Stack(
-                      children: [
-                        Column(
-                          mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(20, 64, 20, 0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  Row(
-                                    mainAxisSize: MainAxisSize.max,
-                                    children: [
-                                      Container(
-                                        width: 100,
-                                        height: 100,
-                                        decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
-                                              .secondaryBackground,
-                                          borderRadius:
-                                              BorderRadius.circular(16),
-                                        ),
-                                        child: Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  16, 16, 16, 16),
-                                          child: ClipRRect(
-                                            borderRadius:
-                                                BorderRadius.circular(12),
-                                            child: Image.asset(
-                                              'assets/images/ac.png',
-                                              width: 100,
-                                              height: 100,
-                                              fit: BoxFit.cover,
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        0, 16, 0, 0),
-                                    child: Stack(
-                                      alignment: AlignmentDirectional(0, 0),
-                                      children: [
-                                        Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          children: [
-                                            Container(
-                                              width: MediaQuery.of(context)
-                                                      .size
-                                                      .width *
-                                                  0.85,
-                                              decoration: BoxDecoration(
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .secondaryBackground,
-                                              ),
-                                              child: AutoSizeText(
-                                                'APPlication',
-                                                maxLines: 1,
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .title1
-                                                        .override(
-                                                          fontFamily: 'Poppins',
-                                                          fontSize: 56,
-                                                          fontWeight:
-                                                              FontWeight.w800,
-                                                        ),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                        Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0, 75, 0, 0),
-                                          child: Row(
-                                            mainAxisSize: MainAxisSize.max,
-                                            children: [
-                                              Text(
-                                                'Andrew Curnow',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyText1
-                                                        .override(
-                                                          fontFamily: 'Poppins',
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .secondaryText,
-                                                          fontSize: 20,
-                                                        ),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        0, 90, 0, 0),
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.max,
-                                      children: [
-                                        Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          children: [
-                                            Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(24, 0, 0, 0),
-                                              child: Text(
-                                                'andrew@miit.co',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyText1
-                                                        .override(
-                                                          fontFamily: 'Poppins',
-                                                          fontSize: 16,
-                                                          fontWeight:
-                                                              FontWeight.bold,
-                                                        ),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                        Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          children: [
-                                            Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(0, 0, 8, 0),
-                                              child: Icon(
-                                                FFIcons.ktwitter,
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primaryText,
-                                                size: 16,
-                                              ),
-                                            ),
-                                            Text(
-                                              '@arjcdaily',
-                                              style: FlutterFlowTheme.of(
-                                                      context)
-                                                  .bodyText2
-                                                  .override(
-                                                    fontFamily: 'Poppins',
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primaryText,
-                                                    fontSize: 13,
-                                                    letterSpacing: 1,
-                                                    fontWeight: FontWeight.w300,
-                                                  ),
-                                            ),
-                                          ],
-                                        ),
-                                        Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          children: [
-                                            Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(0, 0, 8, 0),
-                                              child: FaIcon(
-                                                FontAwesomeIcons.linkedinIn,
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primaryText,
-                                                size: 16,
-                                              ),
-                                            ),
-                                            Text(
-                                              ' arjcdaily',
-                                              style: FlutterFlowTheme.of(
-                                                      context)
-                                                  .bodyText2
-                                                  .override(
-                                                    fontFamily: 'Poppins',
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primaryText,
-                                                    fontSize: 13,
-                                                    letterSpacing: 1,
-                                                    fontWeight: FontWeight.w300,
-                                                  ),
-                                            ),
-                                          ],
-                                        ),
-                                        Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          children: [
-                                            Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(0, 0, 8, 0),
-                                              child: FaIcon(
-                                                FontAwesomeIcons.mediumM,
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primaryText,
-                                                size: 16,
-                                              ),
-                                            ),
-                                            Text(
-                                              'arjcdaily.medium.com',
-                                              style: FlutterFlowTheme.of(
-                                                      context)
-                                                  .bodyText2
-                                                  .override(
-                                                    fontFamily: 'Poppins',
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primaryText,
-                                                    fontSize: 13,
-                                                    letterSpacing: 1,
-                                                    fontWeight: FontWeight.w300,
-                                                  ),
-                                            ),
-                                          ],
-                                        ),
-                                        Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          children: [
-                                            Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(0, 0, 8, 0),
-                                              child: FaIcon(
-                                                FontAwesomeIcons.github,
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primaryText,
-                                                size: 16,
-                                              ),
-                                            ),
-                                            Text(
-                                              ' MiitApp',
-                                              style: FlutterFlowTheme.of(
-                                                      context)
-                                                  .bodyText2
-                                                  .override(
-                                                    fontFamily: 'Poppins',
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primaryText,
-                                                    fontSize: 13,
-                                                    letterSpacing: 1,
-                                                    fontWeight: FontWeight.w300,
-                                                  ),
-                                            ),
-                                          ],
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                        Padding(
-                          padding:
-                              EdgeInsetsDirectional.fromSTEB(20, 20, 20, 0),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              InkWell(
-                                onTap: () async {
-                                  if (FFAppState().drawer) {
-                                    setState(() {
-                                      FFAppState().drawer = false;
-                                    });
-                                    if (animationsMap[
-                                            'containerOnActionTriggerAnimation1'] !=
-                                        null) {
-                                      animationsMap[
-                                              'containerOnActionTriggerAnimation1']!
-                                          .controller
-                                          .reverse();
-                                    }
-                                    if (animationsMap[
-                                            'iconOnActionTriggerAnimation1'] !=
-                                        null) {
-                                      animationsMap[
-                                              'iconOnActionTriggerAnimation1']!
-                                          .controller
-                                          .forward(from: 0.0);
-                                    }
-                                    if (animationsMap[
-                                            'iconOnActionTriggerAnimation2'] !=
-                                        null) {
-                                      animationsMap[
-                                              'iconOnActionTriggerAnimation2']!
-                                          .controller
-                                          .reverse();
-                                    }
-                                    if (animationsMap[
-                                            'containerOnActionTriggerAnimation2'] !=
-                                        null) {
-                                      animationsMap[
-                                              'containerOnActionTriggerAnimation2']!
-                                          .controller
-                                          .reverse();
-                                    }
-                                  } else {
-                                    setState(() {
-                                      FFAppState().drawer = true;
-                                    });
-                                    if (animationsMap[
-                                            'containerOnActionTriggerAnimation1'] !=
-                                        null) {
-                                      animationsMap[
-                                              'containerOnActionTriggerAnimation1']!
-                                          .controller
-                                          .forward(from: 0.0);
-                                    }
-                                    if (animationsMap[
-                                            'iconOnActionTriggerAnimation1'] !=
-                                        null) {
-                                      animationsMap[
-                                              'iconOnActionTriggerAnimation1']!
-                                          .controller
-                                          .reverse();
-                                    }
-                                    if (animationsMap[
-                                            'iconOnActionTriggerAnimation2'] !=
-                                        null) {
-                                      animationsMap[
-                                              'iconOnActionTriggerAnimation2']!
-                                          .controller
-                                          .forward(from: 0.0);
-                                    }
-                                    if (animationsMap[
-                                            'containerOnActionTriggerAnimation2'] !=
-                                        null) {
-                                      animationsMap[
-                                              'containerOnActionTriggerAnimation2']!
-                                          .controller
-                                          .forward(from: 0.0);
-                                    }
-                                  }
-                                },
-                                child: Container(
-                                  width: 50,
-                                  height: 50,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(8),
-                                  ),
-                                  child: Stack(
-                                    alignment: AlignmentDirectional(0, 0),
-                                    children: [
-                                      Icon(
-                                        FFIcons.kmenuBurger5,
-                                        color: Colors.black,
-                                        size: 24,
-                                      ).animateOnActionTrigger(
-                                        animationsMap[
-                                            'iconOnActionTriggerAnimation1']!,
-                                      ),
-                                      Icon(
-                                        FFIcons.karrowLeft5,
-                                        color: Colors.black,
-                                        size: 24,
-                                      ).animateOnActionTrigger(
-                                        animationsMap[
-                                            'iconOnActionTriggerAnimation2']!,
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ).animateOnActionTrigger(
-                  animationsMap['containerOnActionTriggerAnimation1']!,
-                ),
                 Container(
                   width: double.infinity,
                   height: double.infinity,
@@ -1064,8 +663,409 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                       ),
                     ),
                   ).animateOnActionTrigger(
-                    animationsMap['containerOnActionTriggerAnimation2']!,
+                    animationsMap['containerOnActionTriggerAnimation1']!,
                   ),
+                ),
+                AnimatedContainer(
+                  duration: Duration(milliseconds: 300),
+                  curve: Curves.easeIn,
+                  width: double.infinity,
+                  height: double.infinity,
+                  decoration: BoxDecoration(
+                    color: FlutterFlowTheme.of(context).secondaryBackground,
+                    boxShadow: [
+                      BoxShadow(
+                        blurRadius: 50,
+                        color: Color(0xDB000000),
+                        offset: Offset(0, 0),
+                      )
+                    ],
+                    borderRadius: BorderRadius.circular(0),
+                  ),
+                  child: Container(
+                    width: double.infinity,
+                    height: double.infinity,
+                    child: Stack(
+                      children: [
+                        Column(
+                          mainAxisSize: MainAxisSize.max,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(20, 64, 20, 0),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    children: [
+                                      Container(
+                                        width: 100,
+                                        height: 100,
+                                        decoration: BoxDecoration(
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondaryBackground,
+                                          borderRadius:
+                                              BorderRadius.circular(16),
+                                        ),
+                                        child: Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  16, 16, 16, 16),
+                                          child: ClipRRect(
+                                            borderRadius:
+                                                BorderRadius.circular(12),
+                                            child: Image.asset(
+                                              'assets/images/ac.png',
+                                              width: 100,
+                                              height: 100,
+                                              fit: BoxFit.cover,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0, 16, 0, 0),
+                                    child: Stack(
+                                      alignment: AlignmentDirectional(0, 0),
+                                      children: [
+                                        Row(
+                                          mainAxisSize: MainAxisSize.max,
+                                          children: [
+                                            Container(
+                                              width: MediaQuery.of(context)
+                                                      .size
+                                                      .width *
+                                                  0.85,
+                                              decoration: BoxDecoration(
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
+                                              ),
+                                              child: AutoSizeText(
+                                                'APPlication',
+                                                maxLines: 1,
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .title1
+                                                        .override(
+                                                          fontFamily: 'Poppins',
+                                                          fontSize: 56,
+                                                          fontWeight:
+                                                              FontWeight.w800,
+                                                        ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0, 75, 0, 0),
+                                          child: Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            children: [
+                                              Text(
+                                                'Andrew Curnow',
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyText1
+                                                        .override(
+                                                          fontFamily: 'Poppins',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .secondaryText,
+                                                          fontSize: 20,
+                                                        ),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0, 90, 0, 0),
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      children: [
+                                        Row(
+                                          mainAxisSize: MainAxisSize.max,
+                                          children: [
+                                            Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(24, 0, 0, 0),
+                                              child: Text(
+                                                'andrew@miit.co',
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyText1
+                                                        .override(
+                                                          fontFamily: 'Poppins',
+                                                          fontSize: 16,
+                                                          fontWeight:
+                                                              FontWeight.bold,
+                                                        ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                        Row(
+                                          mainAxisSize: MainAxisSize.max,
+                                          children: [
+                                            Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(0, 0, 8, 0),
+                                              child: Icon(
+                                                FFIcons.ktwitter,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryText,
+                                                size: 16,
+                                              ),
+                                            ),
+                                            Text(
+                                              '@arjcdaily',
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .bodyText2
+                                                  .override(
+                                                    fontFamily: 'Poppins',
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .primaryText,
+                                                    fontSize: 13,
+                                                    letterSpacing: 1,
+                                                    fontWeight: FontWeight.w300,
+                                                  ),
+                                            ),
+                                          ],
+                                        ),
+                                        Row(
+                                          mainAxisSize: MainAxisSize.max,
+                                          children: [
+                                            Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(0, 0, 8, 0),
+                                              child: FaIcon(
+                                                FontAwesomeIcons.linkedinIn,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryText,
+                                                size: 16,
+                                              ),
+                                            ),
+                                            Text(
+                                              ' arjcdaily',
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .bodyText2
+                                                  .override(
+                                                    fontFamily: 'Poppins',
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .primaryText,
+                                                    fontSize: 13,
+                                                    letterSpacing: 1,
+                                                    fontWeight: FontWeight.w300,
+                                                  ),
+                                            ),
+                                          ],
+                                        ),
+                                        Row(
+                                          mainAxisSize: MainAxisSize.max,
+                                          children: [
+                                            Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(0, 0, 8, 0),
+                                              child: FaIcon(
+                                                FontAwesomeIcons.mediumM,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryText,
+                                                size: 16,
+                                              ),
+                                            ),
+                                            Text(
+                                              'arjcdaily.medium.com',
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .bodyText2
+                                                  .override(
+                                                    fontFamily: 'Poppins',
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .primaryText,
+                                                    fontSize: 13,
+                                                    letterSpacing: 1,
+                                                    fontWeight: FontWeight.w300,
+                                                  ),
+                                            ),
+                                          ],
+                                        ),
+                                        Row(
+                                          mainAxisSize: MainAxisSize.max,
+                                          children: [
+                                            Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(0, 0, 8, 0),
+                                              child: FaIcon(
+                                                FontAwesomeIcons.github,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryText,
+                                                size: 16,
+                                              ),
+                                            ),
+                                            Text(
+                                              ' MiitApp',
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .bodyText2
+                                                  .override(
+                                                    fontFamily: 'Poppins',
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .primaryText,
+                                                    fontSize: 13,
+                                                    letterSpacing: 1,
+                                                    fontWeight: FontWeight.w300,
+                                                  ),
+                                            ),
+                                          ],
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                        Padding(
+                          padding:
+                              EdgeInsetsDirectional.fromSTEB(20, 20, 20, 0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              InkWell(
+                                onTap: () async {
+                                  if (FFAppState().drawer) {
+                                    setState(() {
+                                      FFAppState().drawer = false;
+                                    });
+                                    if (animationsMap[
+                                            'containerOnActionTriggerAnimation2'] !=
+                                        null) {
+                                      animationsMap[
+                                              'containerOnActionTriggerAnimation2']!
+                                          .controller
+                                          .reverse();
+                                    }
+                                    if (animationsMap[
+                                            'iconOnActionTriggerAnimation1'] !=
+                                        null) {
+                                      animationsMap[
+                                              'iconOnActionTriggerAnimation1']!
+                                          .controller
+                                          .forward(from: 0.0);
+                                    }
+                                    if (animationsMap[
+                                            'iconOnActionTriggerAnimation2'] !=
+                                        null) {
+                                      animationsMap[
+                                              'iconOnActionTriggerAnimation2']!
+                                          .controller
+                                          .reverse();
+                                    }
+                                    if (animationsMap[
+                                            'containerOnActionTriggerAnimation1'] !=
+                                        null) {
+                                      animationsMap[
+                                              'containerOnActionTriggerAnimation1']!
+                                          .controller
+                                          .reverse();
+                                    }
+                                  } else {
+                                    setState(() {
+                                      FFAppState().drawer = true;
+                                    });
+                                    if (animationsMap[
+                                            'containerOnActionTriggerAnimation2'] !=
+                                        null) {
+                                      animationsMap[
+                                              'containerOnActionTriggerAnimation2']!
+                                          .controller
+                                          .forward(from: 0.0);
+                                    }
+                                    if (animationsMap[
+                                            'iconOnActionTriggerAnimation1'] !=
+                                        null) {
+                                      animationsMap[
+                                              'iconOnActionTriggerAnimation1']!
+                                          .controller
+                                          .reverse();
+                                    }
+                                    if (animationsMap[
+                                            'iconOnActionTriggerAnimation2'] !=
+                                        null) {
+                                      animationsMap[
+                                              'iconOnActionTriggerAnimation2']!
+                                          .controller
+                                          .forward(from: 0.0);
+                                    }
+                                    if (animationsMap[
+                                            'containerOnActionTriggerAnimation1'] !=
+                                        null) {
+                                      animationsMap[
+                                              'containerOnActionTriggerAnimation1']!
+                                          .controller
+                                          .forward(from: 0.0);
+                                    }
+                                  }
+                                },
+                                child: Container(
+                                  width: 50,
+                                  height: 50,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                  child: Stack(
+                                    alignment: AlignmentDirectional(0, 0),
+                                    children: [
+                                      Icon(
+                                        FFIcons.kmenuBurger5,
+                                        color: Colors.black,
+                                        size: 24,
+                                      ).animateOnActionTrigger(
+                                        animationsMap[
+                                            'iconOnActionTriggerAnimation1']!,
+                                      ),
+                                      Icon(
+                                        FFIcons.karrowLeft5,
+                                        color: Colors.black,
+                                        size: 24,
+                                      ).animateOnActionTrigger(
+                                        animationsMap[
+                                            'iconOnActionTriggerAnimation2']!,
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ).animateOnActionTrigger(
+                  animationsMap['containerOnActionTriggerAnimation2']!,
                 ),
               ],
             ),
