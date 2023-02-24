@@ -713,7 +713,7 @@ class _AboutWidgetState extends State<AboutWidget>
                                       child: ClipRRect(
                                         borderRadius: BorderRadius.circular(12),
                                         child: Image.asset(
-                                          'assets/images/https___cdn.evbuc.com_images_52433428_79638801435_1_original.avif',
+                                          'assets/images/hackathon2019.jpg',
                                           fit: BoxFit.fitWidth,
                                         ),
                                       ),
