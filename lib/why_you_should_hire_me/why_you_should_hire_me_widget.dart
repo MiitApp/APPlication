@@ -60,19 +60,37 @@ class _WhyYouShouldHireMeWidgetState extends State<WhyYouShouldHireMeWidget>
                     height: 240,
                     fit: BoxFit.fitWidth,
                   ),
-                  FlutterFlowIconButton(
-                    borderColor: Colors.transparent,
-                    borderRadius: 30,
-                    borderWidth: 1,
-                    buttonSize: 60,
-                    icon: Icon(
-                      Icons.arrow_back_rounded,
-                      color: FlutterFlowTheme.of(context).lineColor,
-                      size: 30,
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(0, 44, 0, 0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        FlutterFlowIconButton(
+                          borderColor: Colors.transparent,
+                          borderRadius: 30,
+                          borderWidth: 1,
+                          buttonSize: 44,
+                          icon: Icon(
+                            Icons.arrow_back_rounded,
+                            color: Colors.white,
+                            size: 24,
+                          ),
+                          onPressed: () async {
+                            context.pop();
+                          },
+                        ),
+                        Expanded(
+                          child: Text(
+                            'Back',
+                            style:
+                                FlutterFlowTheme.of(context).bodyText1.override(
+                                      fontFamily: 'Poppins',
+                                      color: Colors.white,
+                                    ),
+                          ),
+                        ),
+                      ],
                     ),
-                    onPressed: () async {
-                      context.pop();
-                    },
                   ),
                 ],
               ),
@@ -94,7 +112,7 @@ class _WhyYouShouldHireMeWidgetState extends State<WhyYouShouldHireMeWidget>
                           ),
                         ),
                         Text(
-                          '110%',
+                          '\$90k',
                           style: FlutterFlowTheme.of(context).title1.override(
                                 fontFamily: 'Poppins',
                                 color:

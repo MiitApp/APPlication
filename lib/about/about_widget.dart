@@ -216,7 +216,7 @@ class _AboutWidgetState extends State<AboutWidget>
                                 padding:
                                     EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
                                 child: Text(
-                                  'Available',
+                                  'Available now',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -226,8 +226,8 @@ class _AboutWidgetState extends State<AboutWidget>
                                       ),
                                 ),
                               ),
-                              Icon(
-                                Icons.radio_button_checked_outlined,
+                              FaIcon(
+                                FontAwesomeIcons.solidCheckCircle,
                                 color: Colors.white,
                                 size: 12,
                               ),
