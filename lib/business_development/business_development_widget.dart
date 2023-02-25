@@ -152,7 +152,7 @@ class _BusinessDevelopmentWidgetState extends State<BusinessDevelopmentWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(4, 0, 0, 0),
                                                 child: Text(
-                                                  '2',
+                                                  '2/2',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .subtitle2
@@ -261,7 +261,7 @@ class _BusinessDevelopmentWidgetState extends State<BusinessDevelopmentWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(0, 8, 0, 0),
                                                 child: Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing...',
+                                                  'I am an entrepreneur at my core, always looking for new opportunities...',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
@@ -277,7 +277,7 @@ class _BusinessDevelopmentWidgetState extends State<BusinessDevelopmentWidget> {
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                                                  'I am an entrepreneur at my core, always looking for new or untapped pathways.  It\'s easy when you\'re talking about something you love.\n\n20+ years of sales experience has made me adept at identifying opprtunities for growth and expansion.',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
@@ -358,7 +358,7 @@ class _BusinessDevelopmentWidgetState extends State<BusinessDevelopmentWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(0, 8, 0, 0),
                                                 child: Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing...',
+                                                  'I am very confident with public speaking and delivering presentations...',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
@@ -374,7 +374,7 @@ class _BusinessDevelopmentWidgetState extends State<BusinessDevelopmentWidget> {
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                                                  'I am very comfortable with public speaking and delivering presentations to large groups of people. \n\nI am a screenwriter and story teller and would welcome the opportunity to share the  FlutterFlow story with the world. ',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1

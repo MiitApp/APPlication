@@ -152,7 +152,7 @@ class _PartnerEnablementWidgetState extends State<PartnerEnablementWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(4, 0, 0, 0),
                                                 child: Text(
-                                                  '2',
+                                                  '2/2',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .subtitle2
@@ -261,7 +261,7 @@ class _PartnerEnablementWidgetState extends State<PartnerEnablementWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(0, 8, 0, 0),
                                                 child: Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing...',
+                                                  'In my years of experience as a Sales Manager a key part...',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
@@ -277,7 +277,7 @@ class _PartnerEnablementWidgetState extends State<PartnerEnablementWidget> {
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                                                  'In my years of experience as a Sales Manager a key part of that role has been recruitment of new team members including onboarding and initiation so that vital resources are retained and maintained. ',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
@@ -358,7 +358,7 @@ class _PartnerEnablementWidgetState extends State<PartnerEnablementWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(0, 8, 0, 0),
                                                 child: Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing...',
+                                                  'Partner turnover is expensive. It\'s vital to give partners the tools they...',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
@@ -374,7 +374,7 @@ class _PartnerEnablementWidgetState extends State<PartnerEnablementWidget> {
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                                                  'Partner turnover is expensive. It\'s vital to give partners the tools they need to succeed whether that be training, guidance, documentation, support or something else.\n\nThis is no different to building a sales team or a startup, both of which I haveconsiderable expernce in. ',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1

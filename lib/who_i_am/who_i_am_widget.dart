@@ -151,7 +151,7 @@ class _WhoIAmWidgetState extends State<WhoIAmWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(4, 0, 0, 0),
                                                 child: Text(
-                                                  '11',
+                                                  '8.5/11',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .subtitle2
@@ -260,7 +260,7 @@ class _WhoIAmWidgetState extends State<WhoIAmWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(0, 8, 0, 0),
                                                 child: Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing...',
+                                                  'I have over 20 years coal-face sales experience in both...',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
@@ -276,7 +276,7 @@ class _WhoIAmWidgetState extends State<WhoIAmWidget> {
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                                                  'I have over 20 years coal-face sales experience in both B2B and B2C environments.\n\nI have sold retail direct to consumer. \n\nI have sold advertising on a app that didn\'t exist yet.\n\nI have sold sponsorhsip packages to corpprate and govenment.\n\nI have sold my own startup vision to developers I didn\'t know who gave up their own time and  worked for years for equity alone. \n\nWhile I may lack specific enterprise sales experience (though I have been the buyer) I can tell you this - prodct or technical knowlege can easily be learned, experience in solution selling cannot. When you believe in the product it\'s even easier.\n\nAs a pro-subscriber who uses the product almost every day, I can tell you I can sell FlutterFlow to anyone. ',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
@@ -357,7 +357,7 @@ class _WhoIAmWidgetState extends State<WhoIAmWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(0, 8, 0, 0),
                                                 child: Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing...',
+                                                  'I founded Miit five years ago, a social network built in Flutter...',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
@@ -373,7 +373,7 @@ class _WhoIAmWidgetState extends State<WhoIAmWidget> {
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                                                  'I founded Miit five years ago, a social network built in Flutter.\n\nThough we never reached large scale, the experience offered in developing a product with those consoderations in mind was invaluable. ',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
@@ -454,7 +454,7 @@ class _WhoIAmWidgetState extends State<WhoIAmWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(0, 8, 0, 0),
                                                 child: Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing...',
+                                                  'I\'ll be straight up, this is the weakest part of my application...',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
@@ -470,7 +470,7 @@ class _WhoIAmWidgetState extends State<WhoIAmWidget> {
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                                                  'I\'ll be straight up, this is the weakest part of my application...',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1

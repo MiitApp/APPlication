@@ -151,7 +151,7 @@ class _PreSalesWidgetState extends State<PreSalesWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(4, 0, 0, 0),
                                                 child: Text(
-                                                  '1',
+                                                  '1/1',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .subtitle2
@@ -260,7 +260,7 @@ class _PreSalesWidgetState extends State<PreSalesWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(0, 8, 0, 0),
                                                 child: Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing...',
+                                                  'I began my career in cold call direct sales which required...',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
@@ -276,7 +276,7 @@ class _PreSalesWidgetState extends State<PreSalesWidget> {
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                                                  'I began my career in cold call direct sales which required prospecting, qualification, product demo and proposal.\n\nThese skills became vital as a founder when recruiting and fund raising in collaboration with co-founders and our existing technical team.',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1

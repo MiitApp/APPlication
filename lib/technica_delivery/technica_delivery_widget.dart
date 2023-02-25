@@ -151,7 +151,7 @@ class _TechnicaDeliveryWidgetState extends State<TechnicaDeliveryWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(4, 0, 0, 0),
                                                 child: Text(
-                                                  '4',
+                                                  '4/4',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .subtitle2
@@ -260,7 +260,7 @@ class _TechnicaDeliveryWidgetState extends State<TechnicaDeliveryWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(0, 8, 0, 0),
                                                 child: Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing...',
+                                                  'I am extremely comfortable conducting project analysys and research...',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
@@ -276,7 +276,7 @@ class _TechnicaDeliveryWidgetState extends State<TechnicaDeliveryWidget> {
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                                                  'I am extremely comfortable conducting project analysys and research and leading meetings with both internal and external stakeholders to help understand needs and considerations from all sides.',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
@@ -285,19 +285,6 @@ class _TechnicaDeliveryWidgetState extends State<TechnicaDeliveryWidget> {
                                                         color:
                                                             Color(0x8A000000),
                                                       ),
-                                                ),
-                                                Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(0, 4, 0, 0),
-                                                  child: Image.network(
-                                                    '',
-                                                    width:
-                                                        MediaQuery.of(context)
-                                                            .size
-                                                            .width,
-                                                    height: 100,
-                                                    fit: BoxFit.cover,
-                                                  ),
                                                 ),
                                               ],
                                             ),
@@ -370,7 +357,7 @@ class _TechnicaDeliveryWidgetState extends State<TechnicaDeliveryWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(0, 8, 0, 0),
                                                 child: Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing...',
+                                                  'I am familiar with the early stages of the product life cycle having...',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
@@ -386,7 +373,7 @@ class _TechnicaDeliveryWidgetState extends State<TechnicaDeliveryWidget> {
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                                                  'I am very familiar with these stages of the product life cycle having deployed them both as founder of Miit and product manager for other projects.\n\nI have also worked with other founders to design, test and validate their ideas.',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
@@ -467,7 +454,7 @@ class _TechnicaDeliveryWidgetState extends State<TechnicaDeliveryWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(0, 8, 0, 0),
                                                 child: Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing...',
+                                                  'I am a lifelong learner, largely self taught...',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
@@ -483,7 +470,7 @@ class _TechnicaDeliveryWidgetState extends State<TechnicaDeliveryWidget> {
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                                                  'I am a lifelong learner, largely self taught. As founder I wasn\'t satisifed being limited to sales and business operations, I wanted to contribute to the building.\n\nInitially that meant learning Wix, then Photoshop, then XD.\n\nThen product management.\n\nThen I learned to code in Flutter, along with some AWS and GCS.\n\nNow I\'m learning FlutterFlow and JS.\n\nI am always hungry for new knowledge.',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
@@ -564,7 +551,7 @@ class _TechnicaDeliveryWidgetState extends State<TechnicaDeliveryWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(0, 8, 0, 0),
                                                 child: Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing...',
+                                                  'This basically describes the early stages at Miit...',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
@@ -580,7 +567,7 @@ class _TechnicaDeliveryWidgetState extends State<TechnicaDeliveryWidget> {
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                                                  'This basically describes the early stages at Miit. A large portion of my time was devoted to discovering potential customer groups, then surveying and interviewing them.\n\nI\'d then take that information and analyse it using the Superhuman Product Market Fit model (built in AirTable) and use that to inform our product roadmap, deciding which features to prioritize or backlog.',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
