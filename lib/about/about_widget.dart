@@ -9,6 +9,7 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'about_model.dart';
 export 'about_model.dart';
 
@@ -190,48 +191,63 @@ class _AboutWidgetState extends State<AboutWidget>
                         'Bio',
                         style: FlutterFlowTheme.of(context).subtitle2,
                       ),
-                      Container(
-                        height: 32,
-                        constraints: BoxConstraints(
-                          maxHeight: 32,
-                        ),
-                        decoration: BoxDecoration(
-                          color: FlutterFlowTheme.of(context).secondaryColor,
-                          boxShadow: [
-                            BoxShadow(
-                              blurRadius: 4,
-                              color: Color(0x32171717),
-                              offset: Offset(0, 2),
-                            )
-                          ],
-                          borderRadius: BorderRadius.circular(30),
-                        ),
-                        child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(8, 0, 8, 0),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
-                                child: Text(
-                                  'Available now',
-                                  style: FlutterFlowTheme.of(context)
-                                      .bodyText1
-                                      .override(
-                                        fontFamily: 'Poppins',
-                                        color: FlutterFlowTheme.of(context)
-                                            .primaryBtnText,
-                                      ),
-                                ),
-                              ),
-                              FaIcon(
-                                FontAwesomeIcons.solidCheckCircle,
-                                color: Colors.white,
-                                size: 12,
-                              ),
+                      InkWell(
+                        onTap: () async {
+                          await launchUrl(Uri(
+                              scheme: 'mailto',
+                              path: 'andrew@miit.co',
+                              query: {
+                                'subject': 'FlutterFlow Careers',
+                                'body': 'We\'d love to hire you',
+                              }
+                                  .entries
+                                  .map((MapEntry<String, String> e) =>
+                                      '${Uri.encodeComponent(e.key)}=${Uri.encodeComponent(e.value)}')
+                                  .join('&')));
+                        },
+                        child: Container(
+                          height: 32,
+                          constraints: BoxConstraints(
+                            maxHeight: 32,
+                          ),
+                          decoration: BoxDecoration(
+                            color: FlutterFlowTheme.of(context).secondaryColor,
+                            boxShadow: [
+                              BoxShadow(
+                                blurRadius: 4,
+                                color: Color(0x32171717),
+                                offset: Offset(0, 2),
+                              )
                             ],
+                            borderRadius: BorderRadius.circular(30),
+                          ),
+                          child: Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(8, 0, 8, 0),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0, 0, 12, 0),
+                                  child: Text(
+                                    'Available now',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Poppins',
+                                          color: FlutterFlowTheme.of(context)
+                                              .primaryBtnText,
+                                        ),
+                                  ),
+                                ),
+                                FaIcon(
+                                  FontAwesomeIcons.solidCheckCircle,
+                                  color: Colors.white,
+                                  size: 12,
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ),
@@ -383,89 +399,106 @@ class _AboutWidgetState extends State<AboutWidget>
                       ),
                       Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 12),
-                        child: Container(
-                          width: double.infinity,
-                          height: 100,
-                          decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
-                            boxShadow: [
-                              BoxShadow(
-                                blurRadius: 4,
-                                color: Color(0x230F1113),
-                                offset: Offset(0, 1),
-                              )
-                            ],
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                          child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(8, 8, 8, 8),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              children: [
-                                ClipRRect(
-                                  borderRadius: BorderRadius.circular(8),
-                                  child: Image.asset(
-                                    'assets/images/Aldrin1.png',
-                                    width: 90,
-                                    height: 100,
-                                    fit: BoxFit.cover,
-                                  ),
+                        child: InkWell(
+                          onTap: () async {
+                            context.pushNamed(
+                              'AldrinERP',
+                              extra: <String, dynamic>{
+                                kTransitionInfoKey: TransitionInfo(
+                                  hasTransition: true,
+                                  transitionType:
+                                      PageTransitionType.rightToLeft,
                                 ),
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      12, 0, 0, 0),
-                                  child: Column(
-                                    mainAxisSize: MainAxisSize.max,
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        'Aldrin - CRM/ERP',
-                                        style: FlutterFlowTheme.of(context)
-                                            .subtitle1,
-                                      ),
-                                      Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        children: [
-                                          Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    0, 4, 0, 0),
-                                            child: Text(
-                                              'NodeJS | React ',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText2,
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 4, 0, 0),
-                                        child: Row(
+                              },
+                            );
+                          },
+                          child: Container(
+                            width: double.infinity,
+                            height: 100,
+                            decoration: BoxDecoration(
+                              color: FlutterFlowTheme.of(context)
+                                  .secondaryBackground,
+                              boxShadow: [
+                                BoxShadow(
+                                  blurRadius: 4,
+                                  color: Color(0x230F1113),
+                                  offset: Offset(0, 1),
+                                )
+                              ],
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            child: Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(8, 8, 8, 8),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.circular(8),
+                                    child: Image.asset(
+                                      'assets/images/Aldrin1.png',
+                                      width: 90,
+                                      height: 100,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        12, 0, 0, 0),
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          'Aldrin - CRM/ERP',
+                                          style: FlutterFlowTheme.of(context)
+                                              .subtitle1,
+                                        ),
+                                        Row(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
                                               padding: EdgeInsetsDirectional
-                                                  .fromSTEB(0, 0, 12, 0),
-                                              child: Icon(
-                                                Icons.desktop_windows_outlined,
-                                                color:
+                                                  .fromSTEB(0, 4, 0, 0),
+                                              child: Text(
+                                                'NodeJS | React ',
+                                                style:
                                                     FlutterFlowTheme.of(context)
-                                                        .primaryText,
-                                                size: 24,
+                                                        .bodyText2,
                                               ),
                                             ),
                                           ],
                                         ),
-                                      ),
-                                    ],
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0, 4, 0, 0),
+                                          child: Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            children: [
+                                              Padding(
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(0, 0, 12, 0),
+                                                child: Icon(
+                                                  Icons
+                                                      .desktop_windows_outlined,
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primaryText,
+                                                  size: 24,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ],
+                                    ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
                           ),
                         ),
@@ -663,7 +696,7 @@ class _AboutWidgetState extends State<AboutWidget>
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(0, 8, 0, 0),
                                                 child: Text(
-                                                  '● Grew the group from 7 to almost 100 members.\n\n● Built and maintained professional relationships with public and private industry stakeholders\n\nincluding QUT. Startup Redlands, ARC Group and Ipswich City Council.\n\n● Sourced speakers for events from all over the world including companies such as Google and Expedia.\n\n● Ran monthly in person and online only events (post-pandemic), including giving talks when required.\n',
+                                                  '● Grew the group from 7 to almost 100 members.\n\n● Built and maintained professional relationships with public and private industry stakeholders including QUT. Startup Redlands, ARC Group and Ipswich City Council.\n\n● Sourced speakers for events from all over the world including companies such as Google and Expedia.\n\n● Ran monthly in person and online only events (post-pandemic), including giving talks when required.\n',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText2,
@@ -788,7 +821,7 @@ class _AboutWidgetState extends State<AboutWidget>
                     children: [
                       Expanded(
                         child: Text(
-                          'Product Management\n\nEnthusiastic entry-level Product Manager. Has worked in Agile Environments as a team leader and mobile developer for over four years. Proven history of successful work with cross-functional teams.\n\nPeople Management\n\nManaged all facets of operation for businesses with over 60 employees, sales teams of 20 and telemarketing teams of 80. Responsible for achieving annual budgets of over \$10M. Extensive experience in recruitment, training and\nmentoring of staff.\n\nStrategic Development \n\nPlanned, developed, and implemented strategies to launch a new business from zero to \$1M+ in turnover within 18 months. Launched into new markets establishing market leader position for the relevant product.\n\nFinancial & Reporting\n\nPrepared monthly and annual budgets for sales, advertising, and installations. Analysis and reporting on weekly sales figures, conversion ratios, revenue & expenses installations, and overall profitability.\n\nSales\n\nGround floor experience in direct sales, \ntelemarketing, promotions, and inbound lead generation. Developed full sales presentations and strategies for numerous products.\n\nCompliance\n\nSound understanding of Australian Consumer Law, QBCC, PCI & WHS regulations.\n',
+                          'Product Management\n\nEnthusiastic entry-level Product Manager. I have worked in Agile Environments as a team leader and mobile developer for over four years with a proven history of success with cross-functional teams.\n\nPeople Management\n\nManaged all facets of operation for businesses with over 60 employees, sales teams of 20 and telemarketing teams of 80. Responsible for achieving annual budgets of over \$10M. \n\nExtensive experience in recruitment, training, and mentoring of staff.\n\nStrategic Development \n\nPlanned, developed, and implemented strategies to launch a new business from zero to \$1M+ in turnover within 18 months. Launched into new markets establishing market leader position for the relevant product.\n\nFinancial & Reporting\n\nPrepared monthly and annual budgets for sales, advertising, and installations. Analysis and reporting on weekly sales figures, conversion ratios, revenue & expenses installations, and overall profitability.\n\nSales\n\nGround floor experience in direct sales, \ntelemarketing, promotions, and inbound lead generation. Developed full sales presentations and strategies for numerous products.\n',
                           style: FlutterFlowTheme.of(context).bodyText2,
                         ),
                       ),
@@ -819,11 +852,58 @@ class _AboutWidgetState extends State<AboutWidget>
                     children: [
                       Expanded(
                         child: Text(
-                          '\nMicrosoft Suite (Word, Excel, PowerPoint)\n\nIntelliJ Suite (IDEA, YouTrack)\n\nIDE (Flutter/Dart, Android Studio & VS Code)\n\nAdobe suite (Photoshop, Illustrator, XD)\n\nInternet & Email (Notion, MailChimp, SendGrid, Gmail, Outlook)\n\nCRM (BUZ, Hubspot)\n\nGitHub\n\nGoogle Cloud Services\n\nAmazon Web Services\n',
+                          '\nMicrosoft Suite (Word, Excel, PowerPoint)\n\nIntelliJ Suite (IDEA, YouTrack)\n\nIDE (Flutter/Dart, Android Studio & VS Code)\n\nAdobe suite (Photoshop, Illustrator, XD)\n\nInternet & Email (Notion, MailChimp, SendGrid, Gmail, Outlook)\n\nCRM (BUZ, Hubspot)\n\nGitHub\n\nGoogle Cloud Services\n\nAmazon Web Services\n\nCodeMagic CI/CD\n',
                           style: FlutterFlowTheme.of(context).bodyText2,
                         ),
                       ),
                     ],
+                  ),
+                ),
+                InkWell(
+                  onTap: () async {
+                    await launchUrl(Uri(
+                        scheme: 'mailto',
+                        path: 'andrew@miit.co',
+                        query: {
+                          'subject': 'FlutterFlow Careers',
+                          'body': 'We\'d love to hire you',
+                        }
+                            .entries
+                            .map((MapEntry<String, String> e) =>
+                                '${Uri.encodeComponent(e.key)}=${Uri.encodeComponent(e.value)}')
+                            .join('&')));
+                  },
+                  child: Container(
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      color: FlutterFlowTheme.of(context).gray600,
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 5,
+                          color: Color(0x411D2429),
+                          offset: Offset(0, -2),
+                        )
+                      ],
+                      borderRadius: BorderRadius.only(
+                        bottomLeft: Radius.circular(0),
+                        bottomRight: Radius.circular(0),
+                        topLeft: Radius.circular(16),
+                        topRight: Radius.circular(16),
+                      ),
+                    ),
+                    child: Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 44),
+                      child: Text(
+                        'Hire Me',
+                        textAlign: TextAlign.center,
+                        style: FlutterFlowTheme.of(context).title2.override(
+                              fontFamily: 'Outfit',
+                              color: Colors.white,
+                              fontSize: 22,
+                              fontWeight: FontWeight.w500,
+                            ),
+                      ),
+                    ),
                   ),
                 ),
               ],

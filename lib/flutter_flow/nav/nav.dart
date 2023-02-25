@@ -75,6 +75,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: 'WhyYouShouldHireMe',
               path: 'whyYouShouldHireMe',
               builder: (context, params) => WhyYouShouldHireMeWidget(),
+            ),
+            FFRoute(
+              name: 'AldrinERP',
+              path: 'aldrinERP',
+              builder: (context, params) => AldrinERPWidget(),
+            ),
+            FFRoute(
+              name: 'Tinsta',
+              path: 'tinsta',
+              builder: (context, params) => TinstaWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ).toRoute(appStateNotifier),
