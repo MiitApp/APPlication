@@ -11,3 +11,5 @@ export 'partner_enablement/partner_enablement_widget.dart'
     show PartnerEnablementWidget;
 export 'why_you_should_hire_me/why_you_should_hire_me_widget.dart'
     show WhyYouShouldHireMeWidget;
+export 'aldrin_e_r_p/aldrin_e_r_p_widget.dart' show AldrinERPWidget;
+export 'tinsta/tinsta_widget.dart' show TinstaWidget;
