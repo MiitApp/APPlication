@@ -931,8 +931,9 @@ class _AboutWidgetState extends State<AboutWidget>
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 FlutterFlowVideoPlayer(
-                                  path: 'assets/videos/720-low_(2)[1].mp4',
-                                  videoType: VideoType.asset,
+                                  path:
+                                      'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/resume-2s62z5/assets/xdch9hfargum/720-low_(2)%5B1%5D.mp4',
+                                  videoType: VideoType.network,
                                   autoPlay: false,
                                   looping: true,
                                   showControls: true,
