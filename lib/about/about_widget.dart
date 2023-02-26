@@ -722,7 +722,7 @@ class _AboutWidgetState extends State<AboutWidget>
                                               ),
                                               Padding(
                                                 padding: EdgeInsetsDirectional
-                                                    .fromSTEB(0, 8, 0, 0),
+                                                    .fromSTEB(0, 8, 0, 8),
                                                 child: Text(
                                                   '● Successfully scaled the group\'s membership from a modest 7 to an impressive nearly 1000 members.\n\n● Established and nurtured valuable partnerships with esteemed public and private industry stakeholders, including QUT, Startup Redlands, ARC Group, and Ipswich City Council.\n\n● Expertly secured high-profile speakers from across the globe, including prominent organizations like Google and Expedia, to present at our events.\n\n● Proactively orchestrated monthly in-person and virtual gatherings, leveraging my expertise to deliver compelling presentations whenever necessary.',
                                                   style: FlutterFlowTheme.of(
@@ -802,7 +802,7 @@ class _AboutWidgetState extends State<AboutWidget>
                                               ),
                                               Padding(
                                                 padding: EdgeInsetsDirectional
-                                                    .fromSTEB(0, 8, 0, 0),
+                                                    .fromSTEB(0, 8, 0, 8),
                                                 child: Text(
                                                   'As a co-founder of Brisbane\'s sole dedicated mobile app hackathon, I have successfully secured annual sponsorship from diverse fields such as business, education, and startup industries. This highly anticipated event challenges participating teams to construct a fully functional prototype app, compatible with either Android or iOS, that addresses a real-world need of a Brisbane-based startup. Our esteemed panel of industry experts judges the submissions, adding to the excitement of the competition.\n\nThis event provides a fantastic opportunity for participants to engage in a thrilling and educational project, compete for exceptional prizes, and allows students, in particular, to gain valuable insight into the process of taking a project from the ideation stage to launching it in the market. Furthermore, it presents startup founders with the chance to validate their ideas and establish their first MVP.',
                                                   style: FlutterFlowTheme.of(
