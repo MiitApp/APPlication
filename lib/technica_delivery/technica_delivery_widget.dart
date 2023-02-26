@@ -260,7 +260,7 @@ class _TechnicaDeliveryWidgetState extends State<TechnicaDeliveryWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(0, 8, 0, 0),
                                                 child: Text(
-                                                  'I am extremely comfortable conducting project analysys and research...',
+                                                  'As an experienced professional, I possess exceptional skills...',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
@@ -276,7 +276,7 @@ class _TechnicaDeliveryWidgetState extends State<TechnicaDeliveryWidget> {
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Text(
-                                                  'I am extremely comfortable conducting project analysys and research and leading meetings with both internal and external stakeholders to help understand needs and considerations from all sides.',
+                                                  'As an experienced professional, I possess exceptional skills in conducting project analysis and research, and leading meetings with customers and partners to truly understand their requirements, business needs, and technical considerations. I am confident in my ability to facilitate discussions that effectively capture the needs and expectations of all stakeholders, ensuring that everyone\'s perspectives are heard and taken into account.\n\nMy communication skills are top-notch, and I am adept at both listening and asking insightful questions that allow me to gain a deep understanding of the requirements and constraints of each project. I am able to translate complex technical concepts into layman\'s terms, making it easy for everyone in the meeting to understand and participate in the discussion.\n\nI approach each meeting with a solutions-oriented mindset, always seeking to identify innovative and effective ways to meet the needs of our customers and partners. I am comfortable taking charge of the meeting, ensuring that it stays on track and that all relevant topics are covered thoroughly.\n\nOverall, my proven ability to lead meetings and effectively gather information from customers and partners is a valuable asset to any organization. I am confident that I can bring a wealth of knowledge and experience to any project, helping to ensure its success and ultimately driving positive business outcomes for both FlutterFlow and partners.',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
@@ -357,7 +357,7 @@ class _TechnicaDeliveryWidgetState extends State<TechnicaDeliveryWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(0, 8, 0, 0),
                                                 child: Text(
-                                                  'I am familiar with the early stages of the product life cycle having...',
+                                                  'Collaborating with FlutterFlow, partner, and customer teams...',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
@@ -373,7 +373,7 @@ class _TechnicaDeliveryWidgetState extends State<TechnicaDeliveryWidget> {
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Text(
-                                                  'I am very familiar with these stages of the product life cycle having deployed them both as founder of Miit and product manager for other projects.\n\nI have also worked with other founders to design, test and validate their ideas.',
+                                                  'Collaborating with FlutterFlow, partner, and customer teams to design, implement, test, and deploy applications and POCs is something that requires expertise and experience. Fortunately, I am an accomplished professional who excels in these stages of the product life cycle. I have extensive experience as both the founder of Miit and as a product manager for other projects, which has given me the ability to navigate these stages with ease and confidence.\n\nIn addition to my vast experience, I have also worked with other founders to design, test, and validate their ideas. I have a track record of delivering high-quality results and exceeding expectations, and I am committed to leveraging my skills and expertise to help my partners and customers achieve their goals.\n\nI am confident that my skills and experience will be a valuable asset to your team, and I look forward to collaborating with you to create innovative and impactful solutions.',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
@@ -454,7 +454,7 @@ class _TechnicaDeliveryWidgetState extends State<TechnicaDeliveryWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(0, 8, 0, 0),
                                                 child: Text(
-                                                  'I am a lifelong learner, largely self taught...',
+                                                  'As a lifelong learner, I am committed to staying at the forefront...',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
@@ -470,7 +470,7 @@ class _TechnicaDeliveryWidgetState extends State<TechnicaDeliveryWidget> {
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Text(
-                                                  'I am a lifelong learner, largely self taught. As founder I wasn\'t satisifed being limited to sales and business operations, I wanted to contribute to the building.\n\nInitially that meant learning Wix, then Photoshop, then XD.\n\nThen product management.\n\nThen I learned to code in Flutter, along with some AWS and GCS.\n\nNow I\'m learning FlutterFlow and JS.\n\nI am always hungry for new knowledge.',
+                                                  'As a lifelong learner, I am committed to staying at the forefront of emerging technologies and industry requirements in order to meet customer needs and stay ahead of industry trends. My drive to contribute to the building process led me to constantly seek new knowledge and skills beyond sales and business operations.\n\nI started by teaching myself Wix, Photoshop, and XD, then quickly moved on to mastering product management. Eager to expand my technical capabilities, I delved into learning to code in Flutter, as well as developing a strong understanding of AWS and GCS. My latest obsession is mastering FlutterFlow and JS, and I am thrilled to be constantly challenging myself to improve and enhance my skillset.\n\nMy unrelenting passion for learning and exploring new technologies is what sets me apart in the industry. I am always seeking out opportunities to expand my knowledge and expertise, and I am constantly striving to stay ahead of the curve in order to deliver the best possible solutions to my clients.\n\nMy unwavering dedication to continuous learning is what drives me to excel in my work, and I am excited to bring this passion to any project I work on. With my strong foundation in a wide range of technologies, I am confident in my ability to adapt and learn quickly to meet the unique demands of any project.',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
@@ -551,7 +551,7 @@ class _TechnicaDeliveryWidgetState extends State<TechnicaDeliveryWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(0, 8, 0, 0),
                                                 child: Text(
-                                                  'This basically describes the early stages at Miit...',
+                                                  'If you want to create a product that truly meets the needs of your customers...',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
@@ -567,7 +567,7 @@ class _TechnicaDeliveryWidgetState extends State<TechnicaDeliveryWidget> {
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Text(
-                                                  'This basically describes the early stages at Miit. A large portion of my time was devoted to discovering potential customer groups, then surveying and interviewing them.\n\nI\'d then take that information and analyse it using the Superhuman Product Market Fit model (built in AirTable) and use that to inform our product roadmap, deciding which features to prioritize or backlog.',
+                                                  'If you want to create a product that truly meets the needs of your customers, then gathering feedback and identifying product needs and blockers is an essential step in the process. As a founder of Miit, I understand this better than most.\n\nIn the early stages of Miit, a significant portion of my time was devoted to discovering potential customer groups and getting their feedback through surveys and interviews. This helped us identify pain points and unmet needs, giving us a clear picture of what features and capabilities our product needed to have in order to be successful.\n\nTo make sense of all this data, we used the Superhuman Product Market Fit model that was built in AirTable. This model allowed us to analyze customer feedback and prioritize product features based on their importance to our target audience.',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1

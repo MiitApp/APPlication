@@ -261,7 +261,7 @@ class _PartnerEnablementWidgetState extends State<PartnerEnablementWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(0, 8, 0, 0),
                                                 child: Text(
-                                                  'In my years of experience as a Sales Manager a key part...',
+                                                  'In my extensive experience as a Sales Manager, one of my core competencies...',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
@@ -277,7 +277,7 @@ class _PartnerEnablementWidgetState extends State<PartnerEnablementWidget> {
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Text(
-                                                  'In my years of experience as a Sales Manager a key part of that role has been recruitment of new team members including onboarding and initiation so that vital resources are retained and maintained. ',
+                                                  'In my extensive experience as a Sales Manager, one of my core competencies has been to qualify and onboard partners to the sales and implementation process with remarkable effectiveness. I have a proven track record of successfully recruiting and retaining top talent, ensuring that our teams are equipped with the necessary skills and knowledge to achieve outstanding results.\n\nAs a seasoned professional, I understand the importance of a well-structured onboarding process that maximizes new hires\' potential and minimizes any negative impact on the organization\'s bottom line. I am skilled at assessing the strengths and weaknesses of potential partners and tailoring our onboarding program to their unique needs, ensuring that they are quickly integrated into our sales and implementation processes.\n\nFurthermore, I recognize that partnering with the right people can make all the difference in achieving our sales targets and driving business success. My ability to identify and onboard the best partners will be a valuable asset to any organization seeking to expand its sales and implementation capabilities.\n\nIn summary, my experience in Sales Management, recruitment, and onboarding make me well-suited to excel in the role of qualifying and onboarding partners to the sales and implementation process. I am confident that my skills and expertise will help FlutterFlow build a high-performing team and achieve your sales and business objectives.',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
@@ -358,7 +358,7 @@ class _PartnerEnablementWidgetState extends State<PartnerEnablementWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(0, 8, 0, 0),
                                                 child: Text(
-                                                  'Partner turnover is expensive. It\'s vital to give partners the tools they...',
+                                                  'Providing effective training and technical guidance...',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
@@ -374,7 +374,7 @@ class _PartnerEnablementWidgetState extends State<PartnerEnablementWidget> {
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Text(
-                                                  'Partner turnover is expensive. It\'s vital to give partners the tools they need to succeed whether that be training, guidance, documentation, support or something else.\n\nThis is no different to building a sales team or a startup, both of which I haveconsiderable expernce in. ',
+                                                  'Providing effective training and technical guidance to FlutterFlow partners is key to reducing partner turnover and increasing their overall success rate.\n\nAs an experienced professional who has built successful sales teams and startups, I understand the importance of equipping partners with the necessary tools and resources to excel. By providing comprehensive training, guidance, and support, we can help our partners achieve their goals and drive success for FlutterFlow.\n\nBy investing in partner enablement, we can establish strong relationships with our partners and position FlutterFlow as the preferred Low Code/No Code platform for developers and businesses. With my expertise in training and technical guidance, I am confident that I can help our partners achieve their full potential and drive success for FlutterFlow.',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1

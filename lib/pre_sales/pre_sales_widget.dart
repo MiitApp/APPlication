@@ -260,7 +260,7 @@ class _PreSalesWidgetState extends State<PreSalesWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(0, 8, 0, 0),
                                                 child: Text(
-                                                  'I began my career in cold call direct sales which required...',
+                                                  'As a seasoned sales professional, I bring a wealth of experience...',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
@@ -276,7 +276,7 @@ class _PreSalesWidgetState extends State<PreSalesWidget> {
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Text(
-                                                  'I began my career in cold call direct sales which required prospecting, qualification, product demo and proposal.\n\nThese skills became vital as a founder when recruiting and fund raising in collaboration with co-founders and our existing technical team.',
+                                                  'As a seasoned sales professional, I bring a wealth of experience to the table when it comes to collaboration during the pre-sale process. I am adept at providing valuable industry and technical insights that can help shape SOW documents, presentations, and other key deliverables.\n\nMy career journey began in cold call direct sales, where I honed my skills in prospecting, qualification, product demos, and proposal writing. These skills proved invaluable when I transitioned into the role of a founder, where I was responsible for recruiting and fundraising in close collaboration with co-founders and our existing technical team.\n\nWith my expertise in sales and business development, combined with my deep understanding of the technical landscape, I am confident that I can add tremendous value to any pre-sale process. I understand the importance of effective communication and collaboration in driving successful outcomes, and I am always eager to share my knowledge and insights with others.',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1

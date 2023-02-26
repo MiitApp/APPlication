@@ -261,7 +261,7 @@ class _BusinessDevelopmentWidgetState extends State<BusinessDevelopmentWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(0, 8, 0, 0),
                                                 child: Text(
-                                                  'I am an entrepreneur at my core, always looking for new opportunities...',
+                                                  'I am a true entrepreneur at heart, with an unrelenting drive...',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
@@ -277,7 +277,7 @@ class _BusinessDevelopmentWidgetState extends State<BusinessDevelopmentWidget> {
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Text(
-                                                  'I am an entrepreneur at my core, always looking for new or untapped pathways.  It\'s easy when you\'re talking about something you love.\n\n20+ years of sales experience has made me adept at identifying opprtunities for growth and expansion.',
+                                                  'I am a true entrepreneur at heart, with an unrelenting drive to explore new and untapped pathways to success. I have a deep passion for FlutterFlow and believe wholeheartedly in its potential to transform the software development landscape. This passion fuels my desire to want to identify new opportunities for growth and expansion of FlutterFlow, both within the customer base and among potential partners.\n\nWith over 20 years of sales experience, I have honed my skills in identifying and capitalizing on opportunities for growth and expansion. I am a master at identifying customer pain points and developing innovative solutions that address those needs. Whether it\'s developing new partnerships or exploring untapped markets, I have a proven track record of identifying and seizing opportunities that lead to sustained growth and success.\n\nWith my entrepreneurial spirit and deep understanding of sales and business development, I am confident in my ability to accelerate the adoption of FlutterFlow among our customers and partners. I am committed to bringing the power of low-code/no-code development to businesses of all sizes, and I am excited to help drive the next phase of growth for this groundbreaking technology.',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
@@ -358,7 +358,7 @@ class _BusinessDevelopmentWidgetState extends State<BusinessDevelopmentWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(0, 8, 0, 0),
                                                 child: Text(
-                                                  'I am very confident with public speaking and delivering presentations...',
+                                                  'As a skilled communicator and storyteller, I am perfectly suited...',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1
@@ -374,7 +374,7 @@ class _BusinessDevelopmentWidgetState extends State<BusinessDevelopmentWidget> {
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Text(
-                                                  'I am very comfortable with public speaking and delivering presentations to large groups of people. \n\nI am a screenwriter and story teller and would welcome the opportunity to share the  FlutterFlow story with the world. ',
+                                                  'As a skilled communicator and storyteller, I am perfectly suited to represent FlutterFlow at a variety of high-profile events and speaking engagements. With extensive experience delivering presentations to large groups of people, I am confident in my ability to captivate and engage audiences of all sizes.\n\nAs a passionate screenwriter, I understand the power of storytelling and the importance of crafting a compelling narrative. I am eager to leverage my skills in this area to help share the exciting story of FlutterFlow with the world, and to demonstrate the many ways in which this powerful platform is revolutionizing the way we think about software development.\n\nWhether speaking at Google Cloud Events, GDG Events, or any other high-profile industry gathering, I am committed to delivering dynamic, impactful presentations that inspire and inform. With a keen sense of the latest industry trends and a deep understanding of the unique value proposition of FlutterFlow, I am confident that I can effectively represent this powerful platform to a wide range of audiences.',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyText1

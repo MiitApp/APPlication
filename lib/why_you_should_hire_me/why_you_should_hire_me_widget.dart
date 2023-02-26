@@ -258,8 +258,8 @@ class _WhyYouShouldHireMeWidgetState extends State<WhyYouShouldHireMeWidget>
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0, 0, 0, 8),
                                           child: AutoSizeText(
-                                            'It\'s rare in any line of work, but particularly anything sales related, to be able to do something you are truly passionate about. \n\nWe migrated our startup to Flutter back in 2019 before it was cool and I\'m now in the process of building the next major release in FlutterFlow. Why? Because it\'s the future.\n\nGetting in on the ground floor of something I genuinely love to use myself would be an amazing opportunity and something I would put everything I have into.\n\nIt might turn out you have more technically qualified applicants for this role. I get that. Just know I\'m going to keep hounding you until you hire me for something. ',
-                                            maxLines: 25,
+                                            'Passion is a rare and powerful force that drives us to do great things. In any line of work, it\'s a privilege to be able to pursue something that truly ignites our passion and fuels our creativity. For me, that passion is FlutterFlow.\n\nAs an early adopter of Flutter, I migrated my startup to the platform before it became mainstream. And now, as I work on building the next major release in FlutterFlow, I can say with confidence that this is the future of app development.\n\nBeing a part of the FlutterFlow team would be an incredible opportunity to work with a platform that I am deeply passionate about. I know that I can contribute to the success of the platform and help drive innovation in the industry. I am committed to giving everything I have to this endeavor.\n\nWhile there may be other applicants who are more technically qualified, my passion for FlutterFlow sets me apart. I am confident that I can bring a unique perspective and drive to the team that will make a difference. And rest assured, I won\'t stop until I\'m a part of the FlutterFlow family. Let\'s work together to create something truly amazing.',
+                                            maxLines: 50,
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyText1
                                                 .override(
@@ -401,7 +401,7 @@ class _WhyYouShouldHireMeWidgetState extends State<WhyYouShouldHireMeWidget>
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       8, 4, 8, 0),
                                   child: Text(
-                                    'APAC based. Have lived in India. Ready and able to travel if required.',
+                                    'APAC based. Lived in India. Ready and able to travel if required.',
                                     textAlign: TextAlign.center,
                                     style: GoogleFonts.getFont(
                                       'Lexend Deca',
