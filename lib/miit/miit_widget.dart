@@ -9,19 +9,18 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'tinsta_model.dart';
-export 'tinsta_model.dart';
+import 'miit_model.dart';
+export 'miit_model.dart';
 
-class TinstaWidget extends StatefulWidget {
-  const TinstaWidget({Key? key}) : super(key: key);
+class MiitWidget extends StatefulWidget {
+  const MiitWidget({Key? key}) : super(key: key);
 
   @override
-  _TinstaWidgetState createState() => _TinstaWidgetState();
+  _MiitWidgetState createState() => _MiitWidgetState();
 }
 
-class _TinstaWidgetState extends State<TinstaWidget>
-    with TickerProviderStateMixin {
-  late TinstaModel _model;
+class _MiitWidgetState extends State<MiitWidget> with TickerProviderStateMixin {
+  late MiitModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
   final _unfocusNode = FocusNode();
@@ -29,7 +28,7 @@ class _TinstaWidgetState extends State<TinstaWidget>
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => TinstaModel());
+    _model = createModel(context, () => MiitModel());
   }
 
   @override
@@ -57,7 +56,7 @@ class _TinstaWidgetState extends State<TinstaWidget>
             image: DecorationImage(
               fit: BoxFit.cover,
               image: Image.asset(
-                'assets/images/original-8365fba97bd01c45f5a6bf6752da06ea.webp',
+                'assets/images/discoverlocalactivities.jpeg',
               ).image,
             ),
           ),
@@ -118,9 +117,9 @@ class _TinstaWidgetState extends State<TinstaWidget>
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Text(
-                            'Tinsta',
+                            'miit',
                             style: FlutterFlowTheme.of(context).title1.override(
-                                  fontFamily: 'Dancing Script',
+                                  fontFamily: 'Racing Sans One',
                                   color: Colors.white,
                                   fontSize: 72,
                                   fontWeight: FontWeight.w500,
@@ -132,7 +131,7 @@ class _TinstaWidgetState extends State<TinstaWidget>
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Text(
-                            'Instagram for dating',
+                            'Bringing People Together',
                             style: FlutterFlowTheme.of(context).title2.override(
                                   fontFamily: 'Poppins',
                                   color: FlutterFlowTheme.of(context)
@@ -177,8 +176,7 @@ class _TinstaWidgetState extends State<TinstaWidget>
                             ),
                             InkWell(
                               onTap: () async {
-                                await launchURL(
-                                    'https://www.behance.net/gallery/158181357/Dating-App-GoMeet');
+                                await launchURL('https://miit.co');
                               },
                               child: Container(
                                 height: 32,
@@ -192,7 +190,7 @@ class _TinstaWidgetState extends State<TinstaWidget>
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       8, 0, 8, 0),
                                   child: Text(
-                                    'Read the Case Study',
+                                    'Visit miit.co',
                                     style: FlutterFlowTheme.of(context)
                                         .bodyText1
                                         .override(
@@ -221,7 +219,7 @@ class _TinstaWidgetState extends State<TinstaWidget>
                       Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 24),
                         child: Text(
-                          'Tinsta is a dating/social networking project currently under development in FlutterFlow. It is loosely based on a case study for the Go Meet dating app found on Behance. \n\nThe concept is simple: take instagram and add the typical dating features of geolocation and advanced filtering but with one extra catch - you can only chat  to one person at a time.\n\nTinsta will be available for Android and iOS in March 2023.',
+                          'Life is better with friends so whether you’re new to a city or looking to expand your social circle Miit helps you discover people, places and things to do with others who share your interests.\n\nStay in touch with all your friends, new and old, and keep up with what’s happening in your local area - whether you’re looking for something interesting to do this weekend or just want to explore the neighborhood.\n\nMiit is available for Android and iOS.',
                           style: FlutterFlowTheme.of(context)
                               .subtitle2
                               .override(

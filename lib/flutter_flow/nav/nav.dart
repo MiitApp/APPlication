@@ -85,6 +85,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: 'Tinsta',
               path: 'tinsta',
               builder: (context, params) => TinstaWidget(),
+            ),
+            FFRoute(
+              name: 'Aldrin',
+              path: 'aldrin',
+              builder: (context, params) => AldrinWidget(),
+            ),
+            FFRoute(
+              name: 'Miit',
+              path: 'miit',
+              builder: (context, params) => MiitWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ).toRoute(appStateNotifier),

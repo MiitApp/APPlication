@@ -13,3 +13,5 @@ export 'why_you_should_hire_me/why_you_should_hire_me_widget.dart'
     show WhyYouShouldHireMeWidget;
 export 'aldrin_e_r_p/aldrin_e_r_p_widget.dart' show AldrinERPWidget;
 export 'tinsta/tinsta_widget.dart' show TinstaWidget;
+export 'aldrin/aldrin_widget.dart' show AldrinWidget;
+export 'miit/miit_widget.dart' show MiitWidget;

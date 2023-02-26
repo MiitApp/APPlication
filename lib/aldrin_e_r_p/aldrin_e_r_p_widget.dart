@@ -344,7 +344,7 @@ class _AldrinERPWidgetState extends State<AldrinERPWidget>
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     12, 12, 12, 12),
                                 child: Text(
-                                  'Aldrin is an ERP system for small to medium enterprises in the retail manufacturing sector. It encompases user management, CRM, appointment scheduling, shopping cart, inventory, process tracking scheduling, invoicing and payments.',
+                                  'Aldrin is an advanced software solution designed specifically for small and medium-sized enterprises operating in the retail manufacturing sector. This powerful system offers a comprehensive suite of tools and features, including user management, CRM, appointment scheduling, shopping cart functionality, inventory management, process tracking, scheduling, invoicing, and payment processing.\n\nWith its user-friendly interface and intuitive design, Aldrin simplifies complex business processes, allowing you to focus on growing your business and serving your customers.',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText2
                                       .override(
@@ -583,7 +583,7 @@ class _AldrinERPWidgetState extends State<AldrinERPWidget>
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     12, 12, 12, 12),
                                 child: Text(
-                                  'This project needed to deliver an upgraded user experience over the current tools being used by the client. I used Design Thinking as a human-centered approach to problem-solving that emphasizes empathy, experimentation, and collaboration.\n\nThis user-centered approach ensures that designers create solutions that are relevant and valuable to the people who will use them.',
+                                  'The objective of this project was to enhance the user experience of the client\'s tools beyond their current state. To achieve this, I employed Design Thinking, a problem-solving methodology that places human needs and preferences at the center of the process. Through this approach, I emphasized empathy, experimentation, and collaboration to create solutions that are relevant and valuable to the users.\n\nBy using a user-centered approach like Design Thinking, designers can ensure that their solutions are not only functional but also aligned with the needs and desires of the end-users. This approach puts the user at the forefront of the design process, resulting in products that are intuitive, user-friendly, and effective.',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText2
                                       .override(
@@ -903,7 +903,7 @@ class _AldrinERPWidgetState extends State<AldrinERPWidget>
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             0, 4, 0, 4),
                                         child: Text(
-                                          'Examining the market for existing tools and what users might expect from an improved experience.',
+                                          'Examining existing tools and what users expect from an improved experience.',
                                           style: FlutterFlowTheme.of(context)
                                               .bodyText2
                                               .override(

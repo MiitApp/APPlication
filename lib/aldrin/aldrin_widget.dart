@@ -6,22 +6,21 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'tinsta_model.dart';
-export 'tinsta_model.dart';
+import 'aldrin_model.dart';
+export 'aldrin_model.dart';
 
-class TinstaWidget extends StatefulWidget {
-  const TinstaWidget({Key? key}) : super(key: key);
+class AldrinWidget extends StatefulWidget {
+  const AldrinWidget({Key? key}) : super(key: key);
 
   @override
-  _TinstaWidgetState createState() => _TinstaWidgetState();
+  _AldrinWidgetState createState() => _AldrinWidgetState();
 }
 
-class _TinstaWidgetState extends State<TinstaWidget>
+class _AldrinWidgetState extends State<AldrinWidget>
     with TickerProviderStateMixin {
-  late TinstaModel _model;
+  late AldrinModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
   final _unfocusNode = FocusNode();
@@ -29,7 +28,7 @@ class _TinstaWidgetState extends State<TinstaWidget>
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => TinstaModel());
+    _model = createModel(context, () => AldrinModel());
   }
 
   @override
@@ -56,9 +55,9 @@ class _TinstaWidgetState extends State<TinstaWidget>
             color: FlutterFlowTheme.of(context).primaryBackground,
             image: DecorationImage(
               fit: BoxFit.cover,
-              image: Image.asset(
-                'assets/images/original-8365fba97bd01c45f5a6bf6752da06ea.webp',
-              ).image,
+              image: CachedNetworkImageProvider(
+                'https://images.pexels.com/photos/3862627/pexels-photo-3862627.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+              ),
             ),
           ),
           child: Column(
@@ -118,9 +117,9 @@ class _TinstaWidgetState extends State<TinstaWidget>
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Text(
-                            'Tinsta',
+                            'Aldrin',
                             style: FlutterFlowTheme.of(context).title1.override(
-                                  fontFamily: 'Dancing Script',
+                                  fontFamily: 'Poppins',
                                   color: Colors.white,
                                   fontSize: 72,
                                   fontWeight: FontWeight.w500,
@@ -132,7 +131,7 @@ class _TinstaWidgetState extends State<TinstaWidget>
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Text(
-                            'Instagram for dating',
+                            'CRM/ERP for  SMEs',
                             style: FlutterFlowTheme.of(context).title2.override(
                                   fontFamily: 'Poppins',
                                   color: FlutterFlowTheme.of(context)
@@ -155,18 +154,8 @@ class _TinstaWidgetState extends State<TinstaWidget>
                                   Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         0, 0, 12, 0),
-                                    child: FaIcon(
-                                      FontAwesomeIcons.apple,
-                                      color: FlutterFlowTheme.of(context)
-                                          .secondaryBackground,
-                                      size: 24,
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        0, 0, 12, 0),
                                     child: Icon(
-                                      Icons.android,
+                                      Icons.desktop_windows_outlined,
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
                                       size: 24,
@@ -177,8 +166,16 @@ class _TinstaWidgetState extends State<TinstaWidget>
                             ),
                             InkWell(
                               onTap: () async {
-                                await launchURL(
-                                    'https://www.behance.net/gallery/158181357/Dating-App-GoMeet');
+                                context.pushNamed(
+                                  'AldrinERP',
+                                  extra: <String, dynamic>{
+                                    kTransitionInfoKey: TransitionInfo(
+                                      hasTransition: true,
+                                      transitionType:
+                                          PageTransitionType.rightToLeft,
+                                    ),
+                                  },
+                                );
                               },
                               child: Container(
                                 height: 32,
@@ -192,7 +189,7 @@ class _TinstaWidgetState extends State<TinstaWidget>
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       8, 0, 8, 0),
                                   child: Text(
-                                    'Read the Case Study',
+                                    'Learn More',
                                     style: FlutterFlowTheme.of(context)
                                         .bodyText1
                                         .override(
@@ -221,7 +218,7 @@ class _TinstaWidgetState extends State<TinstaWidget>
                       Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 24),
                         child: Text(
-                          'Tinsta is a dating/social networking project currently under development in FlutterFlow. It is loosely based on a case study for the Go Meet dating app found on Behance. \n\nThe concept is simple: take instagram and add the typical dating features of geolocation and advanced filtering but with one extra catch - you can only chat  to one person at a time.\n\nTinsta will be available for Android and iOS in March 2023.',
+                          'Aldrin is an advanced software solution designed specifically for small and medium-sized enterprises operating in the retail manufacturing sector. This powerful system offers a comprehensive suite of tools and features, including user management, CRM, appointment scheduling, shopping cart functionality, inventory management, process tracking, scheduling, invoicing, and payment processing.\n\nOur team is working diligently to ensure that Aldrin is fully operational by August 2023, with a progressive rollout planned to ensure a smooth transition for all users.',
                           style: FlutterFlowTheme.of(context)
                               .subtitle2
                               .override(
