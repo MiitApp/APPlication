@@ -1,4 +1,4 @@
-package flowapp.com
+package co.application
 
 import io.flutter.embedding.android.FlutterActivity
 

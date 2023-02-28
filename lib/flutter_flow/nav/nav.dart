@@ -82,14 +82,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => AldrinERPWidget(),
             ),
             FFRoute(
-              name: 'Tinsta',
-              path: 'tinsta',
-              builder: (context, params) => TinstaWidget(),
-            ),
-            FFRoute(
               name: 'Aldrin',
               path: 'aldrin',
               builder: (context, params) => AldrinWidget(),
+            ),
+            FFRoute(
+              name: 'Tinsta',
+              path: 'tinsta',
+              builder: (context, params) => TinstaWidget(),
             ),
             FFRoute(
               name: 'Miit',
